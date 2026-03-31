@@ -1,0 +1,58 @@
+@import url("./style.css");
+
+.card__day{
+    padding: 2em;
+    background: var(--var-sunnyday--card);
+
+    margin: 0 auto;
+    /*position: relative;
+    z-index: 2; */
+
+    display: flex;
+
+    width: 40em;
+}
+
+.superior__part{
+    display: flex;
+    width: 100%;
+}
+
+.max__min{
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.average__temp__h3, .average__temp__h2, .max__temp, .min__temp{
+    color: var(--var-white);
+    font-size: 1em;
+}
+
+.average__temp{
+    border: 1px solid var(--var-white);
+}
+
+.average__temp__temp{
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.average__temp__h3{
+    color: var(--var-white);
+    font-size: 1em;
+}
+
+
+/**/
+
+.min{
+    border: 2px solid var(--minima);
+}
+
+.max{
+    border: 2px solid var(--maxima);
+}

@@ -1,0 +1,50 @@
+@import url("./hours.css");
+@import url("./days.css");
+@import url("./card.css");
+
+body {
+    background-image: url("../img/sunny.jpeg");
+    background-size: cover;
+    background-position: center;                      
+}
+
+:root {
+    font-family: "Datatype:";
+    --maxima: #ff0000;
+    --minima: #53e4f7;
+}
+
+.sunny {
+    --background: #4accff;
+    --sunnyday-div__weather: linear-gradient(210deg,rgba(74, 204, 255, 1) 0%, rgba(87, 180, 199, 1) 59%, rgba(69, 167, 191, 1) 74%, rgba(0, 116, 158, 1) 100%);;
+    --var-white: #fff;
+    --var-sunnyday--card: linear-gradient(336deg,rgba(42, 123, 155, 1) 73%, rgba(85, 125, 0, 1) 100%);
+}
+
+
+.display__weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--var-white);
+}
+
+.location__h3,
+.weather__h2 {
+    font-weight: 100;
+    color: var(--var-white);
+}
+
+.description__h2 {
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--var-white);
+}
+
+.temperature__h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--var-white);
+}
