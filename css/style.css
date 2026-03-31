@@ -1,4 +1,3 @@
-@import url("./hours.css");
 @import url("./days.css");
 @import url("./card.css");
 
@@ -18,7 +17,7 @@ body {
     --background: #4accff;
     --sunnyday-div__weather: linear-gradient(210deg,rgba(74, 204, 255, 1) 0%, rgba(87, 180, 199, 1) 59%, rgba(69, 167, 191, 1) 74%, rgba(0, 116, 158, 1) 100%);;
     --var-white: #fff;
-    --var-sunnyday--card: linear-gradient(336deg,rgba(42, 123, 155, 1) 73%, rgba(85, 125, 0, 1) 100%);
+    --var-sunnyday--card: linear-gradient(123deg,rgba(242, 245, 56, 1) 0%, rgba(0, 116, 158, 1) 48%, rgba(0, 125, 171, 1) 86%);
 }
 
 
