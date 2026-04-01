@@ -1,6 +1,21 @@
 @import url("./style.css");
 
+.hidden{
+    display: none;
+}
+
+.close__window{
+    margin-left: 1em;
+    width: 5%;
+    height: 5%;
+}
+
 .card__day {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     padding: 2em;
     background: var(--var__sunnyday__card);
 

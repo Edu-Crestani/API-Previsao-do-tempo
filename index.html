@@ -11,17 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&family=M+PLUS+Rounded+1c&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <script src="scripts/script.js" defer></script>
+    <script type="module" src="scripts/ui.js"></script>
+    <script type="module" src="scripts/render.js"></script> 
     <title>Previsão do tempo</title>
 </head>
 
 <body class="sunny">
     <header class="header"></header>
-
     <main class="display__weather">
         <h3 class="location__h3">Minha localização</h3>
-        <button class="description__h2" id="change_location">Localização hipotética</button>
+        <button class="description__h2" id="city__name">Minha localização</button>
         <h1 class="temperature__h1">97°</h1>
         <h2 class="weather__h2">Ensolarado</h2>
     </main>
@@ -32,12 +31,12 @@
             <br class="white__line">
             <ul class="ul__weather">
 
-                <li class="li__upcoming__days active">
+                <li class="li__upcoming__days active" id="first">
                     <h2 class="li__upcoming__days__h2" id="day1_h2"></h2>
                     <img src="img/sol.png" alt="Sol" class="weather__img" id="day1_img">
                     <h3 class="li__upcoming__days__h3" id="day1_h3">69°</h3>
                 </li>
-                <li class="li__upcoming__days">
+                <li class="li__upcoming__days" id="2">
                     <h2 class="li__upcoming__days__h2" id="day2_h2"></h2>
                     <img src="img/sol.png" alt="Sol" class="weather__img" id="day2_img">
                     <h3 class="li__upcoming__days__h3" id="day2_h3">69°</h3>
@@ -71,7 +70,7 @@
         </div>
     </section>
 
-    <section class="card__day">
+    <section class="card__day hidden" id="section__infos">
         <div class="superior__part">
 
             <div class="average__temp">
@@ -98,6 +97,7 @@
                     <h3 class="min__temp">1</h3>
                 </div>
             </div>
+            <img src="/API-Previsao-do-tempo/img/x.png" class="close__window">
         </div>
 
         <div class="inferior__part">
